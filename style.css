@@ -34,12 +34,15 @@
     }
 }
 @media(min-width: 1000px){
+    h1{
+        font-size: 2.8rem;
+    }
     strong{
-        font-size: 2rem;
+        font-size: 2.8rem;
     }
     header{
         margin: auto;
-        width: 30rem;
+        width: 38rem;
     }
     .card-box{
         display: grid;
@@ -86,10 +89,10 @@ header > p{
 
 .card{
     background-color: var(--VeryLightGrey);
-    border-top: 0.425rem solid;
+    border-top: 0.325rem solid;
     border-radius: 0.3rem;
     border-top-color: var(--Cyan);
-    box-shadow: 0px 5px 12px 0px rgba(153,153,153,1);
+    box-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.5);
     
     padding: 2rem;
 }
@@ -104,10 +107,12 @@ header > p{
 }
 .card > h2{
     margin: 0;
+    font-weight: 400;
 }
 .card > p{
     color: var(--GrayishBlue);
     margin-right: 1rem;
+    font-size: 0.925rem;
 }
 .card > img{
     margin-top: 1.5rem;
