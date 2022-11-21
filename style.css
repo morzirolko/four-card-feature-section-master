@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+/* */
+:root{
+    font-size: 15px;
+
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+
+    --VeryDarkBlue: hsl(234, 12%, 34%);
+    --GrayishBlue: hsl(229, 6%, 66%);
+    --VeryLightGrey: hsl(0, 0%, 98%);
+}
+*{
+    box-sizing: border-box;
+}
+@media(max-width: 475px){
+    header{
+        margin: 5rem 2rem 0;
+    }
+    header > h1, strong{
+        font-size: 1.625rem;
+    }
+    .card-box{
+        display: block;
+        padding: 0;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+    .card{
+        margin-bottom: 2rem;
+        height: 18rem;
+    }
+}
+@media(min-width: 1000px){
+    strong{
+        font-size: 2rem;
+    }
+    header{
+        margin: auto;
+        width: 30rem;
+    }
+    .card-box{
+        display: grid;
+        padding: 5rem;
+    }
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+
+}
+h1{
+    font-weight: 200;
+    color: var(--VeryDarkBlue);
+    margin-bottom: 0;
+}
+strong{
+    color: var(--VeryDarkBlue);
+    margin: 0;
+}
+header{
+    text-align: center;
+    color: var(--GrayishBlue);
+}
+header > p{
+    font-size: 0.9rem;
+}
+
+.card-box{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    gap: 2rem;
+}
+.span2{
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.span2:last-child{
+    grid-column-start: 3;
+}
+
+
+.card{
+    background-color: var(--VeryLightGrey);
+    border-top: 0.425rem solid;
+    border-radius: 0.3rem;
+    border-top-color: var(--Cyan);
+    box-shadow: 0px 5px 12px 0px rgba(153,153,153,1);
+    
+    padding: 2rem;
+}
+.card:nth-child(2){
+    border-top-color: var(--Red);
+}
+.card:nth-child(3){
+    border-top-color: var(--Orange);
+}
+.card:nth-child(4){
+    border-top-color: var(--Blue);
+}
+.card > h2{
+    margin: 0;
+}
+.card > p{
+    color: var(--GrayishBlue);
+    margin-right: 1rem;
+}
+.card > img{
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+    float: right;
+}
